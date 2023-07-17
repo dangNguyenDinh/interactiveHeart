@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: url(./asset1/background.jpg) repeat-y;
+    background-size: 100%;
+    overflow: hidden;
+}
+
+
+#wrapper{
+    background: none;
+    font-family: Androgyne;
+    background-image: url('./asset1/block1.png'), url('./asset1/block2.png'), url('./asset1/block3.png');
+    background-size: 20vw;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index:1;
+    animation: snowFall 1800s linear infinite;
+    transform: translate3d(0,0,0);
+}
+@keyframes snowFall {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+}
+
+@keyframes invisible {
+    0%{filter: blur(0px);}
+    100%{filter: blur(100px);}
+}
+@keyframes notInvisible {
+    0%{filter: blur(50px);}
+    100%{filter: blur(0px);}
+}
+#heart .ele {
+    position: absolute;
+    width: 1.25vw;
+    height: 1.25vw;
+}
+#heart .black{
+    background-color: black;
+}
+#heart .red{
+    background-color: red;
+}
+
+#heart .white{
+    background-color: white;
+}
+#heart .brown {
+    background-color: brown;
+}
+
+#footer {
+    width: 100%;
+    font-size: 10vh;
+    opacity: 50%;
+    text-align: center;
+    color: black;
+    position: fixed;
+    bottom: 5vh;
+    font-family: cursive;
+}
+
+
+
